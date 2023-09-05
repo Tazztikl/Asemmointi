@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Positioning Items</title>
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/> 
+    <link rel="stylesheet" href="dialogi.css"/>
+    <script src="dialogi.js" defer></script>
     </head>
 
 <body>
@@ -12,9 +14,9 @@
     <img src="img/kokki.png" alt="kokki" class="kokki"/>
     <div class="box">Herkkujen herkkua</div>
       
-    <div class="box" id="grey">Etusivu</div> 
-    <div class="box" id="grey">Ruokalista</div>  
-    <div class="box" id="grey">Yhteystiedot</div>  
+    <div class="box grey">Etusivu</div> 
+    <div class="box grey">Ruokalista</div>  
+    <div class="box grey">Yhteystiedot</div>  
 
 </header>
 </nav>
@@ -24,6 +26,33 @@
 <br>
 <br>
 <br>
+
+<div id="dialogbox">
+
+    <button id="open_dialog">Kirjaudu</button>
+  
+    <dialog id="registrationDialog">
+        <form id="registrationForm">
+            <h2>Kirjaudu sisään</h2>
+            <br>
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z- ]{3,}">
+            <span class="error" id="nameError"></span><br><br>
+
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" pattern="[a-z.]*[@]\bmetropolia.fi" required>
+            <span class="error" id="emailError"></span><br><br>
+
+            <label for="password">Salasana:</label>
+            <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <span class="error" id="passwordError"></span><br><br>
+
+            <button type="submit">Kirjaudu</button>
+            <button type="button" id="close_dialog">Sulje</button>
+        </form>
+    </dialog>
+</div>
+
 <br>
 <br>
 <br>
@@ -33,17 +62,12 @@
 <br>
 <br>
 
-    <div>
-        <img src="img/kokit.png" alt="kokit" class="moikka">
-    </div>
-    <main>
-        <!-- <div class="moikka">1</div>
-        <div class="moikka2">2</div> -->
-
-            
-
-    <h1>Tietoa meistä</h1>
     
+    <main>            
+        <img src="img/kokit.png" alt="kokit" class="moikka">
+        <br>
+    <h1>Tietoa meistä</h1>
+    <br>
 <div>asjdhg</div>
 
     <p style="color: pink;"><span class="lause">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi porro qui non illum tempore inventore esse labore! Tenetur ratione dolores natus ea quae ex aperiam, commodi aliquid blanditiis. Facere, sint.
@@ -54,9 +78,9 @@
     <p class="huom">Huomio huomio!</p>
     <h2>Tossa on tommone pelottava luuranko</h2>
     <h3>←←←←←←←←←←←</h3>
-    pitsa pasta!!! popcorn capucchinio</p>
+    pitsa pasta!!! popcorn capucchinio
     </main>
-    
+    <br>
     <div class="alapalkki">
         <footer class="lause">copyright</footer>
     </div> 

@@ -15,6 +15,11 @@ body {
         background-size: cover;
         padding: 15px;
     background-color: var(--sinine);
+    
+}
+
+body:has(dialog[open]) {
+    overflow-y: hidden;
 }
 
 .valkonen {
@@ -28,6 +33,10 @@ body {
     font-weight: bolder;
     font-style: italic;
 }
+
+/* dialog {
+    background-color: var(--sinine);
+} */
 
 .box {
     height: 50px;
@@ -55,7 +64,10 @@ body {
     box-sizing: content-box;
 }
 
-#grey { background-color: darkgoldenrod;}
+.grey {
+     background-color: darkgoldenrod;
+     
+    }
 
 .clear { clear: both;}
 
@@ -93,7 +105,7 @@ p {
 }
 
 main {
-    background-color: goldenrod;
+background-image: linear-gradient(goldenrod, rgb(182, 123, 67));
     padding: 20px;
     border: 15px ridge var(--sinine);
     margin: 40px auto;
@@ -107,12 +119,12 @@ nav {
 }
 
 .moikka {
-    width: 400px;
+    width: 250px;
     height: auto;
     position: absolute;
-    top: 200px;
-    right: 203px;
-    z-index: 10;
+    top: -260px;
+    right: -30px;
+    z-index: 1;
 
 }
 
@@ -133,8 +145,9 @@ color: white;
 font-size: 30px;
 margin: 30px auto;
     width: 100%;
-    /* overflow: hidden; */
+     overflow: hidden; 
     border: 2px solid black;
+    font-weight: bold;
 }
 
 .alapalkki {
