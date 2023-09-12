@@ -98,14 +98,14 @@ registrationForm.addEventListener('submit', (e) => {
     }
 });
 
-// JavaScript
+
 const menuToggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", () => {
     menu.classList.toggle("active");
 
-    // Toggle menu button animation
+
     const bars = document.querySelectorAll(".bar");
     bars.forEach((bar) => {
         bar.classList.toggle("active" + (bars.indexOf(bar) + 1));

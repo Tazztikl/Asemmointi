@@ -120,13 +120,13 @@ nav {
 }
 
 .moikka {
-    width: 250px;
+    width: 200px;
     height: auto;
     position: absolute;
-    top: -260px;
-    right: -30px;
+    top: -240px;
+    right: 40px;
     z-index: 1;
-
+    overflow: visible;
 }
 
 .moikka2 {
