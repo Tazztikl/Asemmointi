@@ -3,6 +3,7 @@
 <head>
 	<title>Positioning Items</title>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/> 
     <link rel="stylesheet" href="dialogi.css"/>
     <script src="dialogi.js" defer></script>
@@ -12,15 +13,35 @@
     <nav class="clearfix">
     <header class="header">
     <img src="img/kokki.png" alt="kokki" class="kokki"/>
-    <div class="box">Herkkujen herkkua</div>
+   <div class="box">Herkkujen herkkua</div>
       
-    <div class="box grey">Etusivu</div> 
+    <!-- <div class="box grey">Etusivu</div> 
     <div class="box grey">Ruokalista</div>  
-    <div class="box grey">Yhteystiedot</div>  
+    <div class="box grey">Yhteystiedot</div>    -->
+
+    <nav class="desktop-menu">
+        <a href="#">Kotisivu</a>
+        <a href="#">Menu</a>
+        <a href="#">Yhteystiedot</a>
+    </nav>
+
+    <!-- Hamburger menu button for smaller screens (phone) -->
+    <div class="menu-toggle" id="menuToggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Navigation for smaller screens (phone) -->
+    <nav class="mobile-menu" id="menu">
+        <a href="#">Kotisivu</a>
+        <a href="#">Menu</a>
+        <a href="#">Yhteystiedot</a>
+    </nav>
 
 </header>
 </nav>
-<p class="valkonen"><b>Terveiset kokille!</b></p>
+<!-- <p class="valkonen" ><b>Terveiset kokille!</b></p> -->
 
 <br>
 <br>
@@ -61,7 +82,14 @@
 <br>
 <br>
 <br>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
     
     <main>            
         <img src="img/kokit.png" alt="kokit" class="moikka">
@@ -78,7 +106,7 @@
     <p class="huom">Huomio huomio!</p>
     <h2>Tossa on tommone pelottava luuranko</h2>
     <h3>←←←←←←←←←←←</h3>
-    pitsa pasta!!! popcorn capucchinio
+    pitsa pasta!!! popcorn capucchinio</p>
     </main>
     <br>
     <div class="alapalkki">

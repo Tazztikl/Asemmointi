@@ -46,11 +46,12 @@ body:has(dialog[open]) {
     display: inline-block;
      box-sizing: content-box; 
     margin: auto;
+    padding: 1px;
     text-align: center;
     font-size: 100%;
     float: left;
     margin-left: 20px; 
-    top: -10px;
+    margin-top: 1px;
     
 }
 
@@ -159,3 +160,75 @@ margin: 30px auto;
     height: 40px;
     text-align: center;
   }
+
+header {  
+     display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.desktop-menu {
+    display: flex; /* Display the menu on larger screens (computer) */
+    padding: 5px;
+}
+
+.desktop-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+.menu-toggle {
+    display: none; /* Hide the menu button on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.mobile-menu {
+    display: none; /* Hide the menu on smaller screens (phone) */
+    flex-direction: column;
+    background-color: darkcyan;
+    position: absolute;
+    top: 128px;
+    right: 0px;
+    width: 190px;
+    
+    z-index: 3;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.mobile-menu a {
+    display: block;
+    text-align: center;
+    /* padding: 10px; */
+     color: #fff; 
+    text-decoration: none;
+    transition: 0.4s;
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .desktop-menu {
+        display: none; 
+    }
+
+    .menu-toggle {
+        display: flex; 
+    }
+
+    .mobile-menu.active {
+        display: block; 
+    }
+}
