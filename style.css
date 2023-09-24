@@ -55,6 +55,24 @@ body:has(dialog[open]) {
     
 }
 
+#box2 {
+    height: 50px;
+    width: 200px;
+     border: 2px solid black; 
+    color: aliceblue;
+    background-color: bisque;
+    /* display: inline-block;
+     box-sizing: content-box;  */
+    margin: auto;
+    padding: 1px;
+    text-align: center;
+    font-size: 100%;
+    margin-left: 20px; 
+    margin-top: 1px;
+    display: flex;
+    
+}
+
 #laatikko {
     width: 100px;
     height: 100px;
@@ -159,6 +177,7 @@ margin: 30px auto;
     width: 100%;
     height: 40px;
     text-align: center;
+    border: 2px solid black;
   }
 
 header {  
@@ -169,7 +188,7 @@ header {
 }
 
 .desktop-menu {
-    display: flex; /* Display the menu on larger screens (computer) */
+    display: flex; 
     padding: 5px;
 }
 
@@ -181,7 +200,7 @@ header {
 }
 
 .menu-toggle {
-    display: none; /* Hide the menu button on larger screens */
+    display: none; 
     flex-direction: column;
     cursor: pointer;
 }
@@ -195,7 +214,7 @@ header {
 }
 
 .mobile-menu {
-    display: none; /* Hide the menu on smaller screens (phone) */
+    display: none; 
     flex-direction: column;
     background-color: darkcyan;
     position: absolute;
@@ -232,3 +251,111 @@ header {
         display: block; 
     }
 }
+
+
+
+.hero-image {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("img/bar.jpeg");
+    border: 6px inset goldenrod;
+    height: 600px;
+    border-radius: 50% ;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    font-size: 25px;
+    border: 4px inset darkcyan;
+    height: 250px;
+    width: 300px;
+    border-radius: 50% ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("img/hepoja.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    padding: 2px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+
+  .flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: auto;
+  }
+
+
+  
+  .box3 {
+    display: inline;
+    align-items:end;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: bisque;
+    color: black;
+    border-radius: 50% ;
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .content {
+    font-size: 10px;
+    text-align: center;
+  }
+
+#nimi {
+    font-size: 75px;
+    font-weight: bold;
+    color: sandybrown;
+    text-shadow: black 1px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "kaushan";
+    src: url("/Fontti/KaushanScript-Regular.ttf");
+}
+
+.kaushan {
+    font-family: "kaushan";
+}
+
+.charm {
+    font-family: 'Charm', cursive;
+    font-size: 35px;
+    text-shadow: black 2px 2px 5px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
+    #nimi {
+      font-size: 50px; /* Adjust the font size for mobile screens */
+    }
+  }
+
+  @media (max-width: 329px) {
+    #nimi {
+      font-size: 30px; /* Adjust the font size for mobile screens */
+    }
+  }

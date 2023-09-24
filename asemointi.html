@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="style.css"/> 
     <link rel="stylesheet" href="dialogi.css"/>
     <script src="dialogi.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
     </head>
 
 <body>
     <nav class="clearfix">
     <header class="header">
     <img src="img/kokki.png" alt="kokki" class="kokki"/>
-   <div class="box">Herkkujen herkkua</div>
+    <div class="box">Herkkujen herkkua</div>
       
-    <!-- <div class="box grey">Etusivu</div> 
-    <div class="box grey">Ruokalista</div>  
-    <div class="box grey">Yhteystiedot</div>    -->
-
     <nav class="desktop-menu">
         <a href="#">Kotisivu</a>
         <a href="#">Menu</a>
@@ -31,7 +30,6 @@
         <div class="bar"></div>
     </div>
 
-    <!-- Navigation for smaller screens (phone) -->
     <nav class="mobile-menu" id="menu">
         <a href="#">Kotisivu</a>
         <a href="#">Menu</a>
@@ -40,19 +38,22 @@
 
 </header>
 </nav>
-<!-- <p class="valkonen" ><b>Terveiset kokille!</b></p> -->
 
-<br>
-<br>
-<br>
-<br>
+<div class="hero-image">
 
-<div id="dialogbox">
+    <div><b class="kaushan" id="nimi">Oasis of Dakhla</b></div>
+    <br>
+    <div class="hero-text"></div>
 
-    <button id="open_dialog">Kirjaudu</button>
+    <div class="charm">"Älkää niitä hevosia tänne!"
+        <br>-Kriitikko</b></div>
+
+    <div id="dialogbox">
+
+        <button id="open_dialog">Kirjaudu</button>
   
-    <dialog id="registrationDialog">
-        <form id="registrationForm">
+        <dialog id="registrationDialog">
+            <form id="registrationForm">
             <h2>Kirjaudu sisään</h2>
             <br>
             <label for="name">Nimi:</label>
@@ -71,17 +72,30 @@
             <button type="button" id="close_dialog">Sulje</button>
         </form>
     </dialog>
+
+</div>
+</div>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="flexbox">
+
+    <button class="box3">
+    <div class="content"><h1>Potkaa</h1></div>
+    </button>
+
+    <button class="box3">
+      <div class="content"><h1>Kasvis</h1></div>
+    </button>
+
+    <button class="box3">
+      <div class="content"><h1>Juomat</h1></div>
+    </button>
+
+    <button class="box3">
+        <div class="content"><h1>Turpaa</h1></div>
+      </button>
+
+</div>
 <br>
 <br>
 <br>
@@ -110,7 +124,7 @@
         <br>
     <h1>Tietoa meistä</h1>
     <br>
-<div>asjdhg</div>
+    <div>asjdhg</div>
 
     <p style="color: pink;"><span class="lause">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi porro qui non illum tempore inventore esse labore! Tenetur ratione dolores natus ea quae ex aperiam, commodi aliquid blanditiis. Facere, sint.
     Cumque beatae, </span> aperiam consectetur deserunt ipsam culpa amet tempora animi? Porro architecto dignissimos repudiandae doloremque delectus veritatis temporibus commodi culpa dolore rerum sapiente numquam deleniti ducimus, eveniet atque ullam!</p>
