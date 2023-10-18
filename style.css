@@ -140,6 +140,7 @@ main {
   display: grid;
   align-items: flex-start;
   justify-content: flex-start;
+  justify-items: center;
 }
 
 nav {
@@ -494,6 +495,7 @@ ul li {
 }
 
 .ravintolatListattuna {
+
   justify-content: center;
 }
 
@@ -501,4 +503,55 @@ th {
   flex: auto;
   justify-content: center;
   background-color: aliceblue;
+}
+
+.highlight {
+  font-weight: bold;
+  
+}
+
+/* dialog2{
+  background:  var(--light);
+  
+ 
+} */
+
+table {
+  border: #000 6px inset;
+  border-spacing: 0;
+  margin: 2em;
+  padding: 2em;
+  
+}
+
+th {
+  background: var(--variyksi);
+  border-bottom: 1px solid var(--White);
+  color: var(--rich-black);
+  font-weight: normal;
+  padding: 0.5em 1em;
+  text-align: center;
+  
+}
+
+td {
+  background: var(--light);
+  border-bottom: 2px solid var(--Sage);
+  padding: 0.5em 1em;
+  color: var(--rich-black);
+  font-size:x-large;
+  justify-items: center;
+}
+
+
+td:hover{
+  color: white;
+  text-shadow: black 2px 2px 5px;
+}
+
+.lista{
+  background: var(--Beige);
+  color: #FFFFFF;
+
+  
 }

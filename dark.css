@@ -11,7 +11,7 @@ body.dark {background-color: #292c35;
   background-image: url("img/night.gif");
   --variyksi: rgb(0, 139, 127); 
   --varikaksi: rgba(0, 139, 127, 0.658);
-} /* #9b59b6 */
+} 
 
 body.dark h1, body.dark .support a {color: #fff;
 }

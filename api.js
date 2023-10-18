@@ -4,8 +4,8 @@ import { apiUrl, positionOptions } from './variables.js';
 
 const modal2 = document.querySelector('dialog');
 
-const calculateDistance = (x1, y1, x2, y2) =>
-  Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+// const calculateDistance = (x1, y1, x2, y2) =>
+//   Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
 
 const createTable = restaurants => {
   document.querySelector('table').innerHTML = '';
@@ -21,23 +21,23 @@ const createTable = restaurants => {
         });
         // add highlight
         tr.classList.add('highlight');
-        // add restaurant data to modal
-        modal.innerHTML = '';
+        // add restaurant data to modal2
+        modal2.innerHTML = '';
 
         // fetch  weekly menu 
         const menu = await fetchData(
           apiUrl + `/restaurants/weekly/${restaurant._id}/fi`
         );
-        console.log(menu);
+        // console.log(menu);
 
         // fetch daily menu
         const menuday = await fetchData(
           apiUrl + `/restaurants/daily/${restaurant._id}/fi`);
-        console.log(menuday);
+        // console.log(menuday);
 
 
         const menuHtml = restaurantModal(restaurant, menu);
-        modal.insertAdjacentHTML('beforeend', menuHtml);
+        modal2.insertAdjacentHTML('beforeend', menuHtml);
 
         const button2 =
           document.getElementById("button2");
@@ -45,19 +45,19 @@ const createTable = restaurants => {
 
         const sulje = document.getElementById('sulje')
         sulje.addEventListener('click', () => {
-          modal.close();
+          modal2.close();
         });
 
         function ShowDay() {
-          modal.removeChild(document.getElementById("viikko"))
+          modal2.removeChild(document.getElementById("viikko"))
           const menuHtml = showTodaysMenu(restaurant, menuday);
-          modal.insertAdjacentHTML('beforeend', menuHtml);
+          modal2.insertAdjacentHTML('beforeend', menuHtml);
         }
 
-        modal.showModal();
+        modal2.showModal();
       } catch (error) {
-        modal.innerHTML = errorModal(error.message);
-        modal.showModal();
+        modal2.innerHTML = errorModal(error.message);
+        modal2.showModal();
       }
     });
   });
@@ -118,8 +118,8 @@ resetBtn.addEventListener('click', () => {
 });
 
 // } catch (error) {
-//   modal.innerHTML = errorModal(error.message);
-modal.showModal2();
+//   modal2.innerHTML = errorModal(error.message);
+// modal2.showModal2();
   // }
 // };
 
