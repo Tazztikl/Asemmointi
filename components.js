@@ -1,21 +1,15 @@
 
 const restaurantRow = restaurant => {
-    const {name, address, company} = restaurant;
-    const tr = document.createElement('tr');
-    const nameCell = document.createElement('td');
-    nameCell.innerText = name;
-    const addressCell = document.createElement('td');
-    addressCell.innerText = address;
-    const companyCell = document.createElement('td');
-    companyCell.innerText = company;
-    tr.appendChild(nameCell);
-    tr.appendChild(addressCell);
-    //tr.appendChild(companyCell);
-    return tr;
-  };
+  const { name, address, company } = restaurant;
+  const tr = document.createElement('tr');
   
-  
-  
+  const restaurantCell = document.createElement('td');
+  restaurantCell.innerText = `${name} │ ${address} │ ${company}`;
+  tr.appendChild(restaurantCell);
+
+  return tr;
+};
+
   const restaurantModal = (restaurant, menu) => {
     const {name, address, city, postalCode, phone, company} = restaurant;
    
@@ -23,9 +17,9 @@ const restaurantRow = restaurant => {
     <button class="box2" id="sulje" >Close</button>
     <h3>${name}</h3>
     <p>${company}</p>
-    <p>${address} ${postalCode} ${city}</p>
-    <p>${phone}</p>
-    <button class="box2" id="button2" >Show daily menu</button>
+    <p>Osoite: ${address} ${postalCode} ${city}</p>
+    <p>Puhelin: ${phone}</p>
+    <button class="box2" id="button2" >Päivän Menu</button>
     <table id="viikko" >
       <tr>
         <th id="day">Course</th>
@@ -63,7 +57,7 @@ const restaurantRow = restaurant => {
     return html;
   };
   
-  
+
   const showTodaysMenu  = (restaurant, menuday) => {
     const {name, address, city, postalCode, phone, company} = restaurant;
     let html = `
@@ -87,10 +81,7 @@ const restaurantRow = restaurant => {
     html += '</table>';
     return html;
   };
-  
-  
-  
-  
+
   const errorModal = message => {
     const html = `
         <h3>Error</h3>
@@ -98,9 +89,5 @@ const restaurantRow = restaurant => {
         `;
     return html;
   };
-  
-  
-  
-  
-  
+
   export {restaurantRow, restaurantModal, showTodaysMenu, errorModal };

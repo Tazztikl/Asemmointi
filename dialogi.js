@@ -1,7 +1,5 @@
 'use strict'
 
-// import dialogPolyfill from "https://cdn.skypack.dev/dialog-polyfill@0.5.6";
-
 const dialog = document.querySelector("dialog");
 const openDialogBtn = document.getElementById("open_dialog");
 const closeDialogBtn = document.getElementById("close_dialog");
@@ -43,24 +41,6 @@ const closeDialog = (e) => {
 
 openDialogBtn.addEventListener("click", openDialog);
 closeDialogBtn.addEventListener("click", closeDialog);
-
-// if (typeof dialog.showModal !== "function") {
-//   /**
-//    * How to add polyfill outside CodePen conditionally
-//    * let polyfill = document.createElement("script");
-//    * polyfill.type = "text/javascript";
-//    * polyfill.src = "/dist/dialog-polyfill.js";
-//    * document.body.append(polyfill);
-  
-//    * const polyfillStyles = document.createElement("link");
-//    * polyfillStyles.rel = "stylesheet";
-//    * polyfillStyles.href = "dialog-polyfill.css";
-//    * document.head.append(polyfillStyles);
-//    **/
-
-//   // Register polyfill on dialog element once the script has loaded
-// //   dialogPolyfill.registerDialog(dialog);
-// }
 
 const registrationForm = document.getElementById('registrationForm');
 const nameInput = document.getElementById('name');

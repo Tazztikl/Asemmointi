@@ -5,9 +5,9 @@
 }
 
 :root {
-  --variyksi: rgb(0, 112, 129);
-  --varikaksi: goldenrod;
-  --varikolme: rgb(182, 123, 67);
+  --variyksi: #007081;
+  --varikaksi: #daa520;
+  --varikolme: #b67b43;
 }
 
 body {
@@ -35,10 +35,6 @@ body:has(dialog[open]) {
   font-weight: bolder;
   font-style: italic;
 }
-
-/* dialog {
-    background-color: var(--variyksi);
-} */
 
 .box {
   height: 50px;
@@ -132,7 +128,7 @@ main {
   padding: 20px;
   border: 15px ridge var(--variyksi);
   margin: 40px auto;
-  width: 50%;
+  width: 75%;
   /* overflow: hidden; */
   position: relative;
   font-weight: bold;
@@ -141,6 +137,7 @@ main {
   align-items: flex-start;
   justify-content: flex-start;
   justify-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -247,22 +244,6 @@ header {
   transition: 0.4s;
 }
 
-/* @media screen and (max-width: 768px) {
-    .desktop-menu {
-        display: none; 
-    }
-
-    .menu-toggle {
-        display: flex; 
-    }
-
-    .mobile-menu.active {
-        display: block; 
-    }
-} */
-
-
-
 .hero-image {
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("img/bar.jpeg");
@@ -300,8 +281,11 @@ header {
 .flexbox {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   flex: auto;
+  flex-wrap: wrap;
+  margin: 2px;
+  padding: 2px;
 }
 
 .box3 {
@@ -310,7 +294,7 @@ header {
   padding: 10px;
   border: 2px solid black;
   margin: 10px;
-  background-color: bisque;
+  background-color: #ffe4c4;
   color: black;
   border-radius: 50%;
   width: 120px;
@@ -327,7 +311,7 @@ header {
 #nimi {
   font-size: 75px;
   font-weight: bold;
-  color: sandybrown;
+  color: #f4a460;
   text-shadow:
     3px 3px 10px #000,
     -1px -1px 0 #000,
@@ -458,8 +442,6 @@ ul li {
   height: 10rem;
 }
 
-
-
 @media (max-width: 990px) {
   #nimi {
     font-size: 50px;
@@ -494,11 +476,6 @@ ul li {
   justify-content: center;
 }
 
-.ravintolatListattuna {
-
-  justify-content: center;
-}
-
 th {
   flex: auto;
   justify-content: center;
@@ -509,12 +486,6 @@ th {
   font-weight: bold;
   
 }
-
-/* dialog2{
-  background:  var(--light);
-  
- 
-} */
 
 table {
   border: #000 6px inset;
@@ -543,7 +514,6 @@ td {
   justify-items: center;
 }
 
-
 td:hover{
   color: white;
   text-shadow: black 2px 2px 5px;
@@ -551,7 +521,10 @@ td:hover{
 
 .lista{
   background: var(--Beige);
-  color: #FFFFFF;
+  color: #FFFFFF;  
+}
 
-  
+.justify {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
