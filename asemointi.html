@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="dark.css"/> 
     <link rel="stylesheet" href="dialogi.css"/>
     <script src="dialogi.js" defer></script>
+    <script type="module" src="api.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
@@ -27,12 +28,15 @@
         <div>
           <input type="checkbox" class="checkbox" id="checkbox">
           <label for="checkbox" class="checkbox-label">
-            <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            
             <span class="ball"></span>
           </label>
         </div>
     </nav>
+
+    
 
     <div class="menu-toggle" id="menuToggle">
         <div class="bar"></div>
@@ -95,7 +99,7 @@
 </div>
 </div>
 
-<div class="flexbox">
+<div class="Rbuttons">
 
     <button class="box3">
     <div class="content"><h1>Potkaa</h1></div>
@@ -126,7 +130,7 @@
         </div>
         <div class="menu-description">
           <h2 class="menunimi">Hepoja</h2>
-          <ul>
+          <ul id="ravintola-list">
             <li>
               <strong>Hummaa:</strong><br>
               Voi kuinka pieninä palasina onkaan
@@ -180,19 +184,21 @@
           <img src="./img/kartta.png" alt="kartta">
         </div>
         <div class="menu-description">
-          <h2 class="menunimi">Kartta</h2>
+          <h2 class="menunimi">
+            
+
+          </h2>
           
+          
+
         </div>
       </div>
     </div>
   </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  
+  
+
 <br>
 <br>
 <br>
@@ -212,11 +218,32 @@
         <br>
     <h1>Tietoa meistä</h1>
     <br>
-    <div>asjdhg</div>
-
-    <p style="color: pink;"><span class="lause">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi porro qui non illum tempore inventore esse labore! Tenetur ratione dolores natus ea quae ex aperiam, commodi aliquid blanditiis. Facere, sint.
-    Cumque beatae, </span> aperiam consectetur deserunt ipsam culpa amet tempora animi? Porro architecto dignissimos repudiandae doloremque delectus veritatis temporibus commodi culpa dolore rerum sapiente numquam deleniti ducimus, eveniet atque ullam!</p>
-
+    
+    <div id="flexbox">
+      <button class="box4"  id="sodexo">Sodexo</button>
+      <button class="box4"  id="compass">Compass group</button>
+      <button class="box4"  id="reset">Show all</button>
+  
+    </div>
+    <table>
+      <tr class="ravintolatListattuna">
+        <th>Name</th>
+        <th>Address</th>
+      </tr>
+      <!-- add restaurants here -->
+    </table>
+    <!-- modal -->
+    <dialog>
+      
+      <!-- add restaurant info here when restaurant is clicked -->
+      <div id="restaurant-data"> <div id="menuContent">   
+  
+  
+  
+          <!-- Content of the modal goes here -->
+      </div>
+      </div></div>
+    </dialog>
     <p class="lause">
     <img src="img/luurankomies.jpeg" alt="Luuranko" class="luuranko"/>  
     <p class="huom">Huomio huomio!</p>
@@ -229,6 +256,13 @@
         <footer class="lause">copyright</footer>
         
     </div> 
+
+    <script>
+      function toggleDarkTheme() {
+          const body = document.body;
+          body.classList.toggle('dark-theme');
+      }
+  </script>
 
 </body>
 </html>
