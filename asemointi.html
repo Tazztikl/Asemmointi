@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Positioning Items</title>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/> 
-    <link rel="stylesheet" href="dark.css"/> 
-    <link rel="stylesheet" href="dialogi.css"/>
-    <script src="dialogi.js" defer></script>
-    <script type="module" src="api.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9e8dd866bd.js" crossorigin="anonymous"></script>
-    </head>
+  <title>Positioning Items</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dark.css" />
+  <link rel="stylesheet" href="dialogi.css" />
+  <script src="dialogi.js" defer></script>
+  <script type="module" src="api.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9e8dd866bd.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
-    <nav class="clearfix">
+  <nav class="clearfix">
     <header class="header">
-    <img src="img/kokki.png" alt="kokki" class="kokki"/>
-    <div class="box">Herkkujen herkkua</div>
-      
-    <nav class="desktop-menu">
+      <img src="img/kokki.png" alt="kokki" class="kokki" />
+      <div class="box">Herkkujen herkkua</div>
+
+      <nav class="desktop-menu">
         <a href="#">Kotisivu</a>
         <a href="#">Menu</a>
         <a href="#">Yhteystiedot</a>
@@ -30,21 +31,21 @@
           <label for="checkbox" class="checkbox-label">
             <i class="fas fa-sun"></i>
             <i class="fas fa-moon"></i>
-            
+
             <span class="ball"></span>
           </label>
         </div>
-    </nav>
+      </nav>
 
-    
 
-    <div class="menu-toggle" id="menuToggle">
+
+      <div class="menu-toggle" id="menuToggle">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-    </div>
+      </div>
 
-    <nav class="mobile-menu" id="menu">
+      <nav class="mobile-menu" id="menu">
         <a href="#">Kotisivu</a>
         <a href="#">Menu</a>
         <a href="#">Yhteystiedot</a>
@@ -56,73 +57,82 @@
             <span class="ball"></span>
           </label>
         </div>
-    </nav>
+      </nav>
 
-</header>
-</nav>
+    </header>
+  </nav>
 
-<div class="hero-image">
+  <div class="hero-image">
 
     <div><b class="kaushan" id="nimi">Oasis of Dakhla</b></div>
     <br>
     <div class="hero-text"></div>
 
     <div class="charm">"Älkää niitä hevosia tänne!"
-        <br>-Kriitikko</b></div>
+      <br>-Kriitikko</b>
+    </div>
 
     <div id="dialogbox">
 
-        <button id="open_dialog">Kirjaudu</button>
-  
-        <dialog id="registrationDialog">
-            <form id="registrationForm">
-            <h2>Kirjaudu sisään</h2>
-            <br>
-            <label for="name">Nimi:</label>
-            <input type="text" id="name" name="name" required pattern="[A-Za-z- ]{3,}">
-            <span class="error" id="nameError"></span><br><br>
+      <button id="open_dialog">Kirjaudu</button>
 
-            <label for="email">Sähköposti:</label>
-            <input type="email" id="email" name="email" pattern="[a-z.]*[@]\bmetropolia.fi" required>
-            <span class="error" id="emailError"></span><br><br>
+      <dialog id="registrationDialog">
+        <form id="registrationForm">
+          <h2>Kirjaudu sisään</h2>
+          <br>
+          <label for="name">Nimi:</label>
+          <input type="text" id="name" name="name" required pattern="[A-Za-z- ]{3,}">
+          <span class="error" id="nameError"></span><br><br>
 
-            <label for="password">Salasana:</label>
-            <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-            <span class="error" id="passwordError"></span><br><br>
+          <label for="email">Sähköposti:</label>
+          <input type="email" id="email" name="email" pattern="[a-z.]*[@]\bmetropolia.fi" required>
+          <span class="error" id="emailError"></span><br><br>
 
-            <button type="submit">Kirjaudu</button>
-            <button type="button" id="close_dialog">Sulje</button>
+          <label for="password">Salasana:</label>
+          <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+          <span class="error" id="passwordError"></span><br><br>
+
+          <button type="submit">Kirjaudu</button>
+          <button type="button" id="close_dialog">Sulje</button>
         </form>
-    </dialog>
+      </dialog>
 
-</div>
-</div>
-</div>
+    </div>
+  </div>
+  </div>
 
-<div class="Rbuttons">
+  <div class="Rbuttons">
 
     <button class="box3">
-    <div class="content"><h1>Potkaa</h1></div>
+      <div class="content">
+        <h1>Potkaa</h1>
+      </div>
     </button>
 
     <button class="box3">
-      <div class="content"><h1>Kasvis</h1></div>
+      <div class="content">
+        <h1>Kasvis</h1>
+      </div>
     </button>
 
     <button class="box3">
-      <div class="content"><h1>Juomat</h1></div>
+      <div class="content">
+        <h1>Juomat</h1>
+      </div>
     </button>
 
     <button class="box3">
-        <div class="content"><h1>Turpaa</h1></div>
-      </button>
+      <div class="content">
+        <h1>Turpaa</h1>
+      </div>
+    </button>
 
-</div>
-<br>
-<br>
-<br>
+  </div>
+  <br>
+  <br>
+  <br>
 
-<div class="page-container">
+  <div class="page-container">
     <div class="grid-container">
       <div class="grid-item">
         <div class="photo-box">
@@ -151,7 +161,7 @@
           <img src="./img/porkkana.png" alt="porkkana">
         </div>
         <div class="menu-description">
-            <h2 class="menunimi">Kasvi</h2>
+          <h2 class="menunimi">Kasvi</h2>
           <ul>
             <li>
               <strong>Porkkanaa:</strong><br> porkkana on!
@@ -170,12 +180,12 @@
           <img src="./img/kokki2.png" alt="kokki">
         </div>
         <div class="menu-description">
-            <h2 class="menunimi">Illan kokki</h2>
+          <h2 class="menunimi">Illan kokki</h2>
           <ul>
             <li>
               <strong>Sinä!</strong><br> ...
             </li>
-         
+
           </ul>
         </div>
       </div>
@@ -185,84 +195,89 @@
         </div>
         <div class="menu-description">
           <h2 class="menunimi">
-            
+
 
           </h2>
-          
-          
+
+
 
         </div>
       </div>
     </div>
   </div>
 
-  
-  
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>   
-    <main>            
-        <img src="img/kokit.png" alt="kokit" class="moikka">
-        <br>
-    <h1>Tietoa meistä</h1>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <main>
+    <img src="img/kokit.png" alt="kokit" class="moikka">
     <br>
-    
+    <h1>Ravintolat</h1>
+    <br>
+
     <div id="flexbox">
-      <button class="box4"  id="sodexo">Sodexo</button>
-      <button class="box4"  id="compass">Compass group</button>
-      <button class="box4"  id="reset">Show all</button>
-  
+      <button class="box4" id="sodexo">Sodexo</button>
+      <button class="box4" id="compass">Compass group</button>
+      <button class="box4" id="reset">Show all</button>
+
     </div>
     <table>
       <tr class="ravintolatListattuna">
         <th>Name</th>
         <th>Address</th>
       </tr>
-      <!-- add restaurants here -->
+      <div>
+        <!-- add restaurants here -->
+      </div>
     </table>
     <!-- modal -->
     <dialog>
-      
+
       <!-- add restaurant info here when restaurant is clicked -->
-      <div id="restaurant-data"> <div id="menuContent">   
-  
-  
-  
+      <div id="restaurant-data">
+        <div id="menuContent">
+
+
+
           <!-- Content of the modal goes here -->
+        </div>
       </div>
-      </div></div>
+      </div>
     </dialog>
     <p class="lause">
-    <img src="img/luurankomies.jpeg" alt="Luuranko" class="luuranko"/>  
+      <img src="img/luurankomies.jpeg" alt="Luuranko" class="luuranko" />
     <p class="huom">Huomio huomio!</p>
     <h2>Tossa on tommone pelottava luuranko</h2>
     <h3>←←←←←←←←←←←</h3>
     pitsa pasta!!! popcorn capucchinio</p>
-    </main>
-    <br>
-    <div class="alapalkki">
-        <footer class="lause">copyright</footer>
-        
-    </div> 
+  </main>
+  <br>
+  <div class="alapalkki">
+    <footer class="lause">copyright</footer>
 
-    <script>
-      function toggleDarkTheme() {
-          const body = document.body;
-          body.classList.toggle('dark-theme');
-      }
+  </div>
+
+  <script>
+    function toggleDarkTheme() {
+      const body = document.body;
+      body.classList.toggle('dark-theme');
+    }
   </script>
 
 </body>
+
 </html>
